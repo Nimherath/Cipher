@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:elevation="8dp">
+
+    <ImageView
+        android:id="@+id/selected_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/message_input_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/selected_image">
+
+        <EditText
+            android:id="@+id/image_message_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Write a message"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_rounded_corner" />
+
+        <Button
+            android:id="@+id/view_once_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="1"
+            android:background="@drawable/button_rounded"
+            android:textColor="@android:color/black"/>
+
+        <CheckBox
+            android:id="@+id/view_once_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/message_input_wrapper"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/cancel_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/message_input_wrapper"
+        android:text="Cancel" />
+
+</RelativeLayout>

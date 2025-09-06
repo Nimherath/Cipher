@@ -1,0 +1,65 @@
+[versions]
+agp = "8.7.0"
+cameraCamera2 = "1.4.2"
+cameraCore = "1.3.0"
+cameraLifecycle = "1.4.2"
+ccp = "2.5.3"
+firebaseBom = "33.9.0"
+firebaseFirestoreKtx = "25.1.2"
+firebaseMessagingKtx = "24.1.0"
+firebaseStorageKtx = "21.0.1"
+firebaseUiFirestore = "8.0.2"
+glide = "4.16.0"
+googleAuthLibraryOauth2Http = "1.18.0"
+imagepicker = "2.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.0"
+constraintlayout = "2.2.0"
+okhttp = "4.10.0"
+googleGmsGoogleServices = "4.4.2"
+credentials = "1.3.0"
+credentialsPlayServicesAuth = "1.3.0"
+googleid = "1.1.1"
+photoview = "2.3.0"
+tensorflowLite = "2.14.0"
+tensorflowLiteSupport = "0.4.3"
+tensorflowLiteTaskVision = "0.4.3"
+
+[libraries]
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraLifecycle" }
+camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCamera2" }
+camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraCore" }
+ccp = { module = "com.hbb20:ccp", version.ref = "ccp" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+firebase-messaging-ktx = { module = "com.google.firebase:firebase-messaging-ktx", version.ref = "firebaseMessagingKtx" }
+firebase-storage-ktx = { module = "com.google.firebase:firebase-storage-ktx", version.ref = "firebaseStorageKtx" }
+firebase-ui-firestore = { module = "com.firebaseui:firebase-ui-firestore", version.ref = "firebaseUiFirestore" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+google-auth-library-oauth2-http = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "googleAuthLibraryOauth2Http" }
+imagepicker = { module = "com.github.dhaval2404:imagepicker", version.ref = "imagepicker" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version = "placeholder" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+credentials = { group = "androidx.credentials", name = "credentials", version.ref = "credentials" }
+credentials-play-services-auth = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
+photoview = { module = "com.github.chrisbanes:PhotoView", version.ref = "photoview" }
+tensorflow-lite = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflowLite" }
+tensorflow-lite-support = { module = "org.tensorflow:tensorflow-lite-support", version.ref = "tensorflowLiteSupport" }
+tensorflow-lite-task-vision = { module = "org.tensorflow:tensorflow-lite-task-vision", version.ref = "tensorflowLiteTaskVision" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+
